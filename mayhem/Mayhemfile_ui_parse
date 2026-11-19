@@ -1,0 +1,9 @@
+project: savantenvs/irqbalance
+target: ui_parse
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ui_parse/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_ui_parse @@
+    afl: true
+    timeout: 5

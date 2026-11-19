@@ -1,0 +1,4 @@
+           CPU0       CPU1       CPU2       CPU3
+ 11:      12345       6789          0          0     GICv3  27 Level     arch_timer
+ 24:          5          0          0          0     GICv3  33 Level     uart-pl011
+ 30:          0          9          0          0   ITS-MSI 524288 Edge      eth0-rx-0

@@ -1,0 +1,3 @@
+           CPU0       CPU1
+  0:         22          0   IO-APIC   2-edge      timer
+ 16:        100        200   IO-APIC  16-fasteoi   ahci

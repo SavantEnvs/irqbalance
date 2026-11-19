@@ -1,0 +1,9 @@
+project: savantenvs/irqbalance
+target: cpumask
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/cpumask/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_cpumask
+    libfuzzer: true
+    timeout: 5

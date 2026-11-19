@@ -1,0 +1,9 @@
+project: savantenvs/irqbalance
+target: sock_handle
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sock_handle/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_sock_handle
+    libfuzzer: true
+    timeout: 5
